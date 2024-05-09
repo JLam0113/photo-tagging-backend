@@ -14,7 +14,6 @@ exports.get = [
       res.sendStatus(500)
     }
     else {
-      console.log(req.query)
       if (req.query.x >= character.x1 && req.query.x <= character.x2 && req.query.y >= character.y1 && req.query.y <= character.y2) {
         res.json({ status: 'Success' })
       }
